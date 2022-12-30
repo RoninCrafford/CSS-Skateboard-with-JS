@@ -1,0 +1,125 @@
+html {height:100%;}
+
+body {
+  height:100%;
+  margin:0;
+  transform-style:preserve-3d;
+  perspective:600px;
+}
+
+h1 {
+  width:100%;
+  text-align:center;
+  font-family:Helvetica;
+  color:rgb(30,30,30);
+}
+
+#skateboard {
+  background:rgb(30,30,30);
+  background:linear-gradient(to right, rgb(30,30,30) 0%,rgb(38,38,38) 15%,rgb(38,38,38) 85%,rgb(30,30,30) 100%);
+  width:400px;
+  height:110px;
+  left:50%;
+  top:50%;
+  margin:-55px 0 0 -200px;
+  border-radius:110px;
+  box-shadow:0 1px 0 #a98c4a,
+             0 2px 0 #a98c4a,
+             0 3px 0 #a98c4a,
+             0 4px 0 #a98c4a,
+             0 5px 0 #a98c4a,
+             0 6px 0 #a98c4a,
+             0 7px 0 rgb(50,50,50);
+  position:absolute;
+  font-size:0;
+  transform:rotateX(-60deg);
+}
+
+#skateboard.trick {
+  animation:trick 0.4s 1 linear;
+}
+
+.supp {
+  background:rgb(200,200,200);
+  width:14px;
+  height:16px;
+  top:118px;
+  display:inline-block;
+  position:relative;
+}
+
+#s1 {left:60px;}
+
+#s2 {left:310px;}
+
+.wheel {
+  background:#fff6d7;
+  width:30px;
+  height:30px;
+  top:24px;
+  border-radius:30px;
+  border:1px solid #8e8978;
+  position:relative;
+  rotateX:(-5deg);
+}
+
+.wheel span {
+  background:#8e8978;
+  width:8px;
+  height:8px;
+  left:11px;
+  top:11px;
+  border-radius:8px;
+  position:relative;
+  display:block;
+}
+
+#w1 {
+  left:-16px;
+  box-shadow:0 -1px #b1ab97,
+             0 -2px #b1ab97,
+             1px -3px #b1ab97,
+             1px -4px #b1ab97,
+             1px -5px #b1ab97,
+             1px -6px #b1ab97,
+             1px -7px #b1ab97,
+             2px -8px #b1ab97,
+             2px -9px #b1ab97,
+             2px -10px #b1ab97,
+             2px -11px #b1ab97,
+             2px -12px #b1ab97,
+             3px -13px #b1ab97,
+             3px -14px #b1ab97,
+             3px -15px #b1ab97,
+             3px -16px #b1ab97,
+             3px -17px #b1ab97,
+             4px -18px #b1ab97;
+}
+#w2 {
+  left:-3px;
+  box-shadow:0 -1px #b1ab97,
+             0 -2px #b1ab97,
+             -1px -3px #b1ab97,
+             -1px -4px #b1ab97,
+             -1px -5px #b1ab97,
+             -1px -6px #b1ab97,
+             -1px -7px #b1ab97,
+             -2px -8px #b1ab97,
+             -2px -9px #b1ab97,
+             -2px -10px #b1ab97,
+             -2px -11px #b1ab97,
+             -2px -12px #b1ab97,
+             -3px -13px #b1ab97,
+             -3px -14px #b1ab97,
+             -3px -15px #b1ab97,
+             -3px -16px #b1ab97,
+             -3px -17px #b1ab97,
+             -4px -18px #b1ab97;
+}
+
+@keyframes trick {
+  0% {top:50%;transform:rotate(0) rotateX(0) rotateY(0);}
+  25% {transform:rotate(20deg) rotateX(20deg) rotateY(2deg);}
+  50% {top:10%;transform:rotate(20deg) rotateX(180deg) rotateY(30deg);}
+  100% {top:50%;transform:rotate(0) rotateX(360deg) rotateY(0);}
+}
